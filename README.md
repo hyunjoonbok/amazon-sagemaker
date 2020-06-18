@@ -45,5 +45,5 @@ From Source
 For detailed information, please refer to [official github](https://github.com/aws/sagemaker-python-sdk)
 
 
-
+> Example codes are taken often times from Julien Simon's [Gitlab](https://gitlab.com/juliensimon/dlnotebooks/-/tree/master/sagemaker)
 > More examples are in 'https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs.html'
