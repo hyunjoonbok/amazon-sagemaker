@@ -118,7 +118,8 @@ These examples display unique functionality available in Amazon SageMaker. They 
    <p>
     The similar script mode codesets as above, but this time we look at the example of Deep Learning problem (MNIST) with Tensorflow.
 	</p>    
-   ##### For more information on Script mode, plese refer to [AWS Blog](https://aws.amazon.com/blogs/machine-learning/using-tensorflow-eager-execution-with-amazon-sagemaker-script-mode/)
+
+##### For more information on Script mode, plese refer to [AWS Blog](https://aws.amazon.com/blogs/machine-learning/using-tensorflow-eager-execution-with-amazon-sagemaker-script-mode/)
 
 
 <hr>
