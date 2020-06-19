@@ -89,32 +89,32 @@ For detailed installing information, please refer to Sagemaker Python SDK [Githu
 
 These examples display unique functionality available in Amazon SageMaker. They cover a broad range of topics with different method that user can utilize inside SageMaker.
 
-   #### [Image Classification on CIFAR-10 (transfer-learning)](https://github.com/hyunjoonbok/Python-Projects/blob/master/tensorflow/Reuters%20News%20Classification%20using%20LSTM%20(long-short%20tem%20memory)%20in%20Tensorflow.ipynb) 
+   #### [Image Classification on CIFAR-10 (transfer-learning)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Image%20Classification%20on%20CIFAR-10%20(transfer-learning)%20in%20Amazon%20SageMaker.ipynb) 
    <p>
-    We use **transfer learning mode** in Sagemaker to fine-tune a pre-trained model (trained on imagenet data) to learn to classify a new dataset. The pre-trained model (ImageNet) will be fine-tuned using CIFAR-10 dataset. This covers a complete model-building cycle (dataloading, preprocessing, Hyperparmeter setting, Sagemaker training, Investigating loss, Testing, Model Deployment) using Amazon SageMaker.
+    We use transfer learning mode in Sagemaker to fine-tune a pre-trained model (trained on imagenet data) to learn to classify a new dataset. The pre-trained model (ImageNet) will be fine-tuned using CIFAR-10 dataset. This covers a complete model-building cycle (dataloading, preprocessing, Hyperparmeter setting, Sagemaker training, Investigating loss, Testing, Model Deployment) using Amazon SageMaker.
 	</p>
   
-   #### [Movie recommendation with Factorization Machines](https://github.com/hyunjoonbok/Python-Projects/blob/master/tensorflow/Reuters%20News%20Classification%20using%20LSTM%20(long-short%20tem%20memory)%20in%20Tensorflow.ipynb) 
+   #### [Movie recommendation with Factorization Machines](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Movie%20recommendation%20with%20Factorization%20Machines%20on%20Amazon%20SageMaker.ipynb) 
    <p>
     In this notebook, we are going to build a simple movie recommendation model with Factorization machine using Amazon Sagemaker. Covers full AWS integreation (using S3 to store objects, and booting up EC2 instance in local Jupyter Notebook)
 	</p>  
    
-   #### [Amazon SageMaker AutoPilot (ML Tabular Problem)](https://github.com/hyunjoonbok/Python-Projects/blob/master/tensorflow/Reuters%20News%20Classification%20using%20LSTM%20(long-short%20tem%20memory)%20in%20Tensorflow.ipynb) 
+   #### [Amazon SageMaker AutoPilot (ML Tabular Problem)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Amazon%20SageMaker%20AutoPilot%20(model%20building%20to%20deploy).ipynb) 
    <p>
     We cover SageMaker's AutoML feature, known as Autopilot, which automatically trains and tunes the best machine learning models for classification or regression, based on data while allowing to maintain full control and visibility. It takes care of all data preprocessing steps for users, so it is super useful when trying to quickly build a ML solution prototype. Here we look at the ML exmaple with tabular data to predict whether the client is enrolled in product(bank term deposit).
 	</p>  
 
-   #### [Advanced Amazon SageMaker AutoPilot (Hyperparameter tuning)](https://github.com/hyunjoonbok/Python-Projects/blob/master/tensorflow/Reuters%20News%20Classification%20using%20LSTM%20(long-short%20tem%20memory)%20in%20Tensorflow.ipynb) 
+   #### [Advanced Amazon SageMaker AutoPilot (Hyperparameter tuning)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/(Advanced)%20Amazon%20SageMaker%20AutoPilot%20(Hyperparameter%20tuning).ipynb) 
    <p>
     Here we specifically look at how we could fine-tune hyperparamers using the same example in the basic Autopilot example above. It shows how Sagemakers' fast computing resources takes care of tuning much faster and cost-efficient than any other services. We can also inspect training and tuning jobs within Amazon SageMaker Experiments console (so it never goes away!). Also covers a complete model-building cycle.
 	</p>  
 
-   #### [Sagemaker Script mode (ML - XGboost))](https://github.com/hyunjoonbok/Python-Projects/blob/master/tensorflow/Reuters%20News%20Classification%20using%20LSTM%20(long-short%20tem%20memory)%20in%20Tensorflow.ipynb) 
+   #### [Sagemaker Script mode (ML - XGboost))](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Sagemaker%20Script%20mode%20usage%20(ML%20-%20XGboost).ipynb) 
    <p>
     Introduce a script-mode in Sagemaker where a user can bring their own Python file. Script mode is a very useful technique that lets you easily run your existing code in Amazon SageMaker, with very little change in codes. This gives more flexibility in the traning without having to worry about building containers or managing the underlying infrastructure. This time, we tackle the simple Deep Learning problem (MNIST) with Tensorflow
 	</p>  
   
-   #### [Sagemaker Script mode (DL - Tensorflow)](https://github.com/hyunjoonbok/Python-Projects/blob/master/tensorflow/Reuters%20News%20Classification%20using%20LSTM%20(long-short%20tem%20memory)%20in%20Tensorflow.ipynb) 
+   #### [Sagemaker Script mode (DL - Tensorflow)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Sagemaker%20Script%20mode%20usage%20(DL%20-%20Tensorflow).ipynb) 
    <p>
     The similar script mode codesets as above, but this time we look at the example of Deep Learning problem (MNIST) with Tensorflow.
 	</p>    
