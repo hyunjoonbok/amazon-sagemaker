@@ -21,7 +21,7 @@ This repository contains End-to-End Amazon Sagemaker usages from model builing t
 
 <hr>
 
-# Setup
+## Setup
 
 First things first, you should set up authentication credentials. Credentials for your AWS account can be found in the IAM Console. You can create or use an existing user. Go to manage access keys and generate a new set of keys. For a new AWS user, go to [AWS website](https://aws.amazon.com/), and create an account. 
 
@@ -85,7 +85,7 @@ For detailed installing information, please refer to Sagemaker Python SDK [Githu
 
 <hr>
 
-# SageMaker Examples
+## SageMaker Examples
 
 These examples display unique functionality available in Amazon SageMaker. They cover a broad range of topics with different method that user can utilize inside SageMaker.
 
@@ -129,7 +129,7 @@ Created by [@hyunjoonbok](https://www.linkedin.com/in/hyunjoonbok/) - feel free 
 
 
 ## References 
-> Julien Simon's [Gitlab](https://gitlab.com/juliensimon/dlnotebooks/-/tree/master/sagemaker)
-> [Boto3 setup](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs.html)
-> Official amazon-sagemaker-examples [Github](https://github.com/awslabs/amazon-sagemaker examples/blob/master/advanced_functionality/README.md)
+- Julien Simon's [Gitlab](https://gitlab.com/juliensimon/dlnotebooks/-/tree/master/sagemaker)
+- [Boto3 setup](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs.html)
+- Official amazon-sagemaker-examples [Github](https://github.com/awslabs/amazon-sagemaker examples/blob/master/advanced_functionality/README.md)
 
