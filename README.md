@@ -135,6 +135,6 @@ Created by [@hyunjoonbok](https://www.linkedin.com/in/hyunjoonbok/) - feel free 
 
 
 ### References 
-- Julien Simon's [Gitlab](https://gitlab.com/juliensimon/dlnotebooks/-/tree/master/sagemaker)
-- [Boto3 setup](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs.html)
-- Official amazon-sagemaker-examples [Github](https://github.com/awslabs/amazon-sagemaker examples/blob/master/advanced_functionality/README.md)
+- Julien Simon's [Gitlab](https://gitlab.com/juliensimon/dlnotebooks/-/tree/master/sagemaker) \
+- [Boto3 setup](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs.html) \
+- Official amazon-sagemaker-examples [Github](https://github.com/awslabs/amazon-sagemaker-examples/blob/master/advanced_functionality/README.md)
