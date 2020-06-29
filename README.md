@@ -27,7 +27,8 @@ First things first, you should set up authentication credentials. Credentials fo
 
 Then, you have to install AWS Command Line Interface (AWS CLI) depending on your OS. For downloading instructions, please refer to [AWS CLI Documentation](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html).
 
-Finally, if you have the AWS CLI installed, then you can use it to configure your credentials file. Type in your CMD:
+Finally, if you have the AWS CLI installed, then you can use it to configure your credentials file. 
+For Windows, type below command to CMD(window+R), or Bash if you are Mac User
 
 ```
 aws configure
