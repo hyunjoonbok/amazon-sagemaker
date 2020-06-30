@@ -133,6 +133,7 @@ Created by [@hyunjoonbok](https://www.linkedin.com/in/hyunjoonbok/) - feel free 
 ## To-Do 
 - Consume official AWS sagemaker [github](https://github.com/awslabs/amazon-sagemaker-examples)
 - Consume official AWS sagemaker script mode [github](https://github.com/aws-samples/amazon-sagemaker-script-mode)
+- SageMaker + Spark [Notebook](https://github.com/awslabs/amazon-sagemaker-examples/blob/master/advanced_functionality/inference_pipeline_sparkml_xgboost_abalone/inference_pipeline_sparkml_xgboost_abalone.ipynb)
 
 
 ### References 
