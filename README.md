@@ -140,3 +140,4 @@ Created by [@hyunjoonbok](https://www.linkedin.com/in/hyunjoonbok/) - feel free 
 - Julien Simon's [Gitlab](https://gitlab.com/juliensimon/dlnotebooks/-/tree/master/sagemaker) \
 - [Boto3 setup](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs.html) \
 - Official amazon-sagemaker-examples [Github](https://github.com/awslabs/amazon-sagemaker-examples/blob/master/advanced_functionality/README.md)
+- SageMaker with Airflow [Github](https://github.com/aws-samples/sagemaker-ml-workflow-with-apache-airflow)
