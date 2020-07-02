@@ -27,7 +27,8 @@ First things first, you should set up authentication credentials. Credentials fo
 
 Then, you have to install AWS Command Line Interface (AWS CLI) depending on your OS. For downloading instructions, please refer to [AWS CLI Documentation](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html).
 
-Finally, if you have the AWS CLI installed, then you can use it to configure your credentials file. Type in your CMD:
+Finally, if you have the AWS CLI installed, then you can use it to configure your credentials file. 
+For Windows, type below command to CMD(window+R), or Bash if you are Mac User
 
 ```
 aws configure
@@ -129,8 +130,14 @@ These examples display unique functionality available in Amazon SageMaker. They 
 Created by [@hyunjoonbok](https://www.linkedin.com/in/hyunjoonbok/) - feel free to contact me!
 
 
-## References 
-- Julien Simon's [Gitlab](https://gitlab.com/juliensimon/dlnotebooks/-/tree/master/sagemaker)
-- [Boto3 setup](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs.html)
-- Official amazon-sagemaker-examples [Github](https://github.com/awslabs/amazon-sagemaker examples/blob/master/advanced_functionality/README.md)
+## To-Do 
+- Consume official AWS sagemaker [github](https://github.com/awslabs/amazon-sagemaker-examples)
+- Consume official AWS sagemaker script mode [github](https://github.com/aws-samples/amazon-sagemaker-script-mode)
+- SageMaker + Spark [Notebook](https://github.com/awslabs/amazon-sagemaker-examples/blob/master/advanced_functionality/inference_pipeline_sparkml_xgboost_abalone/inference_pipeline_sparkml_xgboost_abalone.ipynb)
 
+
+### References 
+- Julien Simon's [Gitlab](https://gitlab.com/juliensimon/dlnotebooks/-/tree/master/sagemaker) \
+- [Boto3 setup](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs.html) \
+- Official amazon-sagemaker-examples [Github](https://github.com/awslabs/amazon-sagemaker-examples/blob/master/advanced_functionality/README.md)
+- SageMaker with Airflow [Github](https://github.com/aws-samples/sagemaker-ml-workflow-with-apache-airflow)
