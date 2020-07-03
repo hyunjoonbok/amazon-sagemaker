@@ -95,11 +95,21 @@ These examples display unique functionality available in Amazon SageMaker. They 
     We use transfer learning mode in Sagemaker to fine-tune a pre-trained model (trained on imagenet data) to learn to classify a new dataset. The pre-trained model (ImageNet) will be fine-tuned using CIFAR-10 dataset. This covers a complete model-building cycle (dataloading, preprocessing, Hyperparmeter setting, Sagemaker training, Investigating loss, Testing, Model Deployment) using Amazon SageMaker.
 	</p>
   
-   #### [Movie recommendation with Factorization Machines](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Movie%20recommendation%20with%20Factorization%20Machines%20on%20Amazon%20SageMaker.ipynb) 
+   #### [Recommendation System on Amazon SageMaker - Beginner (Factorization Machine)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Recommendation%20System%20on%20Amazon%20SageMaker%20-%20Beginner%20(Factorization%20Machine).ipynb) 
    <p>
-    In this notebook, we are going to build a simple movie recommendation model with Factorization machine using Amazon Sagemaker. Covers full AWS integreation (using S3 to store objects, and booting up EC2 instance in local Jupyter Notebook)
-	</p>  
+    In this notebook, we are going to build a simple movie recommendation model with Factorization-Machine algorithm using Amazon Sagemaker. Covers full AWS integreation (using S3 to store objects, and booting up EC2 instance in local Jupyter Notebook). 
+	</p> 
+	
+   #### [Recommendation System on Amazon SageMaker - Advanced (Factorization Machine)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Recommendation%20System%20on%20Amazon%20SageMaker%20-%20Advanced%20(Factorization%20Machine).ipynb) 
+   <p>
+    This notebook incorportates advanced methods to build a recommendation model in Amazon SageMaker. We are going utilize Apache Airflow with Amazaon SageMaker, and this model would give recommendataion based on the Amazon customer ratings on over 160K digital videos.
+	</p>  	
    
+   #### [Recommendation System on Amazon SageMaker (ObjectToVec)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Recommendation%20System%20on%20Amazon%20SageMaker%20(ObjectToVec).ipynb) 
+   <p>
+    This notebook covers another algorithm Object2Vec, which is a highly customizable multi-purpose algorithm that can learn embeddings of pairs of objects, to build a recommendation model in SageMaker. We process the data with Spark, train it with XGBoost and deploy as Inference Pipeline
+	</p>  	
+      
    #### [Amazon SageMaker AutoPilot (ML Tabular Problem)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Amazon%20SageMaker%20AutoPilot%20(model%20building%20to%20deploy).ipynb) 
    <p>
     We cover SageMaker's AutoML feature, known as Autopilot, which automatically trains and tunes the best machine learning models for classification or regression, based on data while allowing to maintain full control and visibility. It takes care of all data preprocessing steps for users, so it is super useful when trying to quickly build a ML solution prototype. Here we look at the ML exmaple with tabular data to predict whether the client is enrolled in product(bank term deposit).
@@ -108,6 +118,21 @@ These examples display unique functionality available in Amazon SageMaker. They 
    #### [Advanced Amazon SageMaker AutoPilot (Hyperparameter tuning)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/(Advanced)%20Amazon%20SageMaker%20AutoPilot%20(Hyperparameter%20tuning).ipynb) 
    <p>
     Here we specifically look at how we could fine-tune hyperparamers using the same example in the basic Autopilot example above. It shows how Sagemakers' fast computing resources takes care of tuning much faster and cost-efficient than any other services. We can also inspect training and tuning jobs within Amazon SageMaker Experiments console (so it never goes away!). Also covers a complete model-building cycle.
+	</p>  
+
+   #### [Fraud Detection Modeling on Amazon SageMaker - Advanced](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Fraud%20Detection%20Modeling%20on%20Amazon%20SageMaker%20-%20Advanced.ipynb) 
+   <p>
+    We build a Fraud Dection model using a credit card usage data, provided by Worldline and the Machine Learning Group (http://mlg.ulb.ac.be) of ULB (Université Libre de Bruxelles). We go through full cycle of model building (data loading, cleaning, modeling, deploying, inference). Fraud Detection Using Machine Learning enables you to execute automated transaction processing on an example dataset or your own dataset. The includes ML model detects potentially fraudulent activity and flags that activity for review. 
+	</p>  
+
+   #### [Forecast with Amazon SageMaker DeepAR 1 (Speed-violation Prediction)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Forecast%20with%20Amazon%20SageMaker%20DeepAR%201%20(Speed-violation%20Prediction).ipynb) 
+   <p>
+    This notebook shows time series forecasting using the Amazon SageMaker DeepAR algorithm by analyzing city of Chicago’s Speed Camera Violation dataset. The data is provided by Chicago Gov Data Portal. We also go through full cycle of model building (data loading, cleaning, modeling, deploying, inference) in SageMaker using Python SDK. 
+	</p>  
+
+   #### [Forecast with Amazon SageMaker DeepAR 2 (energy consumption Prediction)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Forecast%20with%20Amazon%20SageMaker%20DeepAR%202%20(Speed-violation%20Prediction).ipynb) 
+   <p>
+    TThis notebook shows how to use DeepAR on SageMaker for predicting energy consumption of 370 customers over time. Particularly we will see the power of SageMaker where it trains a model, deploy it, and make requests to the deployed model to obtain forecasts interactively. Also, we will utilize DeepAR's advanced features like: missing values, additional time features, non-regular frequencies and category information. Same her, we go through full cycle of model building (data loading, cleaning, modeling, deploying, inference) in SageMaker using Python SDK. 
 	</p>  
 
    #### [Sagemaker Script mode (ML - XGboost))](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Sagemaker%20Script%20mode%20usage%20(ML%20-%20XGboost).ipynb) 
