@@ -156,7 +156,7 @@ Created by [@hyunjoonbok](https://www.linkedin.com/in/hyunjoonbok/) - feel free 
 
 
 ## To-Do 
-- Build End-to-End Machine Learning (ML) Workflows with Amazon SageMaker and Apache Airflow [github]https://github.com/aws-samples/sagemaker-ml-workflow-with-apache-airflow), [AWS Blog](https://aws.amazon.com/blogs/machine-learning/build-end-to-end-machine-learning-workflows-with-amazon-sagemaker-and-apache-airflow/)
+- Build End-to-End Machine Learning (ML) Workflows with Amazon SageMaker and Apache Airflow [github](https://github.com/aws-samples/sagemaker-ml-workflow-with-apache-airflow), [AWS Blog](https://aws.amazon.com/blogs/machine-learning/build-end-to-end-machine-learning-workflows-with-amazon-sagemaker-and-apache-airflow/)
 - Consume official AWS sagemaker [github](https://github.com/awslabs/amazon-sagemaker-examples)
 - Consume official AWS sagemaker script mode [github](https://github.com/aws-samples/amazon-sagemaker-script-mode)
 - SageMaker + Spark [Notebook](https://github.com/awslabs/amazon-sagemaker-examples/blob/master/advanced_functionality/inference_pipeline_sparkml_xgboost_abalone/inference_pipeline_sparkml_xgboost_abalone.ipynb)
