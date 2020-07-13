@@ -157,6 +157,11 @@ These examples display unique functionality available in Amazon SageMaker. They 
    <p>
     In this example, we will show you how to train an object detector by re-using a model you previously trained in the SageMaker. With this model re-using ability, you can save the training time when you update the model with new data or improving the model quality with the same data. In the first half of this notebook (Intial Training), we will follow the training with RecordIO format example to train a object detection model on the Pascal VOC dataset. In the second half, we will show you how you can re-use the trained model and improve its quality without repeating the entire training process. 
 	</p>  
+	
+   #### [Object Detection using Amazon SageMaker - Advanced (Transfer Learning with ResNet50 with SSD)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Object%20Detection%20using%20Amazon%20SageMaker%20-%20Advanced%20(Transfer%20Learning%20with%20ResNet50%20with%20SSD).ipynb) 
+   <p>
+    Introduction Object detection is the process of identifying and localizing objects in an image. A typical object detection solution takes an image as input and provides a bounding box on the image where an object of interest is found. It also identifies what type of object the box encapsulates. To create such a solution, we need to acquire and process a traning dataset, create and setup a training job for the alorithm so that it can learn about the dataset. Finally, we can then host the trained model in an endpoint, to which we can supply images. This notebook is an end-to-end example showing how the Amazon SageMaker Object Detection algorithm can be used with a publicly available dataset of bird images. Amazon SageMaker's object detection algorithm uses the Single Shot multibox Detector (SSD) algorithm, and this notebook uses a ResNet base network with that algorithm.
+	</p> 	
 
 
    #### [US Census Segmentation using PCA and K-means clustering](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Data%20Segmentation%20using%20PCA%20and%20K-means%20clustering.ipynb) 
