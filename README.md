@@ -94,6 +94,11 @@ These examples display unique functionality available in Amazon SageMaker. They 
    <p>
     We use transfer learning mode in Sagemaker to fine-tune a pre-trained model (trained on imagenet data) to learn to classify a new dataset. The pre-trained model (ImageNet) will be fine-tuned using CIFAR-10 dataset. This covers a complete model-building cycle (dataloading, preprocessing, Hyperparmeter setting, Sagemaker training, Investigating loss, Testing, Model Deployment) using Amazon SageMaker.
 	</p>
+	
+   #### [Unsupervised Anomaly Detection in Amazon SageMaker (IP address detection)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Unsupervised%20Anomaly%20Detection%20in%20Amazon%20SageMaker%20(IP%20address%20detection).ipynb) 
+   <p>
+    In this notebook, we use the Amazon SageMaker IP Insights algorithm to train a model on synthetic data. We then use this model to perform inference on the data and show how to discover suspicious IP addresses. It ingests historical data as (entity, IPv4 Address) pairs and learns the IP usage patterns of each entity. When queried with an (entity, IPv4 Address) event, an Amazon SageMaker IP Insights model returns a score that infers how anomalous the pattern of the event is.
+	</p>	
   
    #### [Recommendation System on Amazon SageMaker - Beginner (Factorization Machine)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Recommendation%20System%20on%20Amazon%20SageMaker%20-%20Beginner%20(Factorization%20Machine).ipynb) 
    <p>
@@ -108,7 +113,8 @@ These examples display unique functionality available in Amazon SageMaker. They 
    #### [Recommendation System on Amazon SageMaker (ObjectToVec)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Recommendation%20System%20on%20Amazon%20SageMaker%20(ObjectToVec).ipynb) 
    <p>
     This notebook covers another algorithm Object2Vec, which is a highly customizable multi-purpose algorithm that can learn embeddings of pairs of objects, to build a recommendation model in SageMaker. We process the data with Spark, train it with XGBoost and deploy as Inference Pipeline
-	</p>  	
+	</p>  
+		
       
    #### [Amazon SageMaker AutoPilot (ML Tabular Problem)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Amazon%20SageMaker%20AutoPilot%20(model%20building%20to%20deploy).ipynb) 
    <p>
@@ -119,6 +125,11 @@ These examples display unique functionality available in Amazon SageMaker. They 
    <p>
     Here we specifically look at how we could fine-tune hyperparamers using the same example in the basic Autopilot example above. It shows how Sagemakers' fast computing resources takes care of tuning much faster and cost-efficient than any other services. We can also inspect training and tuning jobs within Amazon SageMaker Experiments console (so it never goes away!). Also covers a complete model-building cycle.
 	</p>  
+	
+   #### [Predict the age of Abalone (regression problem) with Amazon SageMaker, Spark Pipeline, and AWS Glue](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Predict%20the%20age%20of%20Abalone%20(regression%20problem)%20with%20Amazon%20SageMaker%2C%20Spark%20Pipeline%2C%20and%20AWS%20Glue%20.ipynb) 
+   <p>
+    This notebook shows how to build a prediction model to determine age of an Abalone (a kind of shellfish) from its physical measurements, using Feature processing with Spark, training with XGBoost and deploying as Inference Pipeline. In this notebook, we use Amazon Glue to run serverless Spark. Though the notebook demonstrates the end-to-end flow on a small dataset, the setup can be seamlessly used to scale to larger datasets. We'll use SparkML to process the dataset (apply one or many feature transformers) and upload the transformed dataset to S3 so that it can be used for training with XGBoost.
+	</p>		
 
    #### [Fraud Detection Modeling on Amazon SageMaker - Advanced](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Fraud%20Detection%20Modeling%20on%20Amazon%20SageMaker%20-%20Advanced.ipynb) 
    <p>
@@ -135,11 +146,28 @@ These examples display unique functionality available in Amazon SageMaker. They 
     This notebook shows how to use DeepAR on SageMaker for predicting energy consumption of 370 customers over time. Particularly we will see the power of SageMaker where it trains a model, deploy it, and make requests to the deployed model to obtain forecasts interactively. Also, we will utilize DeepAR's advanced features like: missing values, additional time features, non-regular frequencies and category information. Same her, we go through full cycle of model building (data loading, cleaning, modeling, deploying, inference) in SageMaker using Python SDK. 
 	</p>  
 
-   #### [(SageMaker + Spark)Predict the age of Abalone (regression problem) with Amazon SageMaker, Spark Pipeline, and AWS Glue](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Predict%20the%20age%20of%20Abalone%20(regression%20problem)%20with%20Amazon%20SageMaker%2C%20Spark%20Pipeline%2C%20and%20AWS%20Glue%20.ipynb) 
+   #### [Object Detection using Amazon SageMaker (RecordIO format)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Object%20Detection%20using%20Amazon%20SageMaker%20(RecordIO%20format).ipynb) 
    <p>
-    This notebook shows how to build a prediction model to determine age of an Abalone (a kind of shellfish) from its physical measurements, using Feature processing with Spark, training with XGBoost and deploying as Inference Pipeline. In this notebook, we use Amazon Glue to run serverless Spark. Though the notebook demonstrates the end-to-end flow on a small dataset, the setup can be seamlessly used to scale to larger datasets. 
-	</p> 
+    This notebook shows end-to-end example introducing the Amazon SageMaker Object Detection algorithm. In this demo, we will demonstrate how to train and to host an object detection model on the Pascal VOC dataset using the Single Shot multibox Detector (SSD) algorithm. In doing so, we will also demonstrate how to construct a training dataset using the RecordIO format as this is the format that the training job will consume. We go through full cycle of model building. 
+	</p>  
 
+   #### [Object Detection using Amazon SageMaker (Incremental Training)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Object%20Detection%20using%20Amazon%20SageMaker%20(Incremental%20Training).ipynb) 
+   <p>
+    In this example, we will show you how to train an object detector by re-using a model you previously trained in the SageMaker. With this model re-using ability, you can save the training time when you update the model with new data or improving the model quality with the same data. In the first half of this notebook (Intial Training), we will follow the training with RecordIO format example to train a object detection model on the Pascal VOC dataset. In the second half, we will show you how you can re-use the trained model and improve its quality without repeating the entire training process. 
+	</p>  
+
+
+   #### [US Census Segmentation using PCA and K-means clustering](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Data%20Segmentation%20using%20PCA%20and%20K-means%20clustering.ipynb) 
+   <p>
+    Typically for machine learning problems, clear use cases are derived from labelled data. For example, based on the attributes of a device, such as its age or model number, we can predict its likelihood of failure. We call this supervised learning because there is supervision or guidance towards predicting specific outcomes. However, in the real world, there are often large data sets where there is no particular outcome to predict, where clean labels are hard to define. It can be difficult to pinpoint exactly what the right outcome is to predict. This technique can be applied by businesses in customer or user segmentation to create targeted marketing campaigns. So this notebook demonstrates how we can access the underlying models that are built within Amazon SageMaker to extract useful model attributes.
+	</p>
+	
+	
+   #### [Bring Your Own Locally Trained ML/DL Model in SageMaker (XGBoost)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Bring%20Your%20Own%20Locally%20Trained%20ML%26DL%20Model%20in%20SageMaker%20(XGBoost).ipynb) 
+   <p>
+    This notebook shows how to train an Xgboost model in scikit-learn and then inject it into Amazon SageMaker's first party XGboost container for scoring. This addresses the usecase where a customer has already trained their model outside of Amazon SageMaker, but wishes to host it for predictions within Amazon SageMaker. Amazon SageMaker includes functionality to support a hosted notebook environment, distributed, serverless training, and real-time hosting. We think it works best when all three of these services are used together, but they can also be used independently. Some use cases may only require hosting. Maybe the model was trained prior to Amazon SageMaker existing, in a different service. Please note that scikit-learn XGBoost model is compatible with SageMaker XGBoost container, whereas other gradient boosted tree models (such as one trained in SparkML) are not.
+	</p>	
+	
 
    #### [Sagemaker Script mode (ML - XGboost))](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Sagemaker%20Script%20mode%20usage%20(ML%20-%20XGboost).ipynb) 
    <p>
@@ -163,8 +191,8 @@ Created by [@hyunjoonbok](https://www.linkedin.com/in/hyunjoonbok/) - feel free 
 
 ## To-Do 
 - Build End-to-End Machine Learning (ML) Workflows with Amazon SageMaker and Apache Airflow [github](https://github.com/aws-samples/sagemaker-ml-workflow-with-apache-airflow), [AWS Blog](https://aws.amazon.com/blogs/machine-learning/build-end-to-end-machine-learning-workflows-with-amazon-sagemaker-and-apache-airflow/)
-- Consume official AWS sagemaker [github](https://github.com/awslabs/amazon-sagemaker-examples)
-- Consume official AWS sagemaker script mode [github](https://github.com/aws-samples/amazon-sagemaker-script-mode)
+- Official AWS sagemaker [github](https://github.com/awslabs/amazon-sagemaker-examples)
+- Official AWS sagemaker script mode [github](https://github.com/aws-samples/amazon-sagemaker-script-mode)
 
 
 ### References 
