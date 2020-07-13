@@ -94,7 +94,13 @@ These examples display unique functionality available in Amazon SageMaker. They 
    #### [Unsupervised Anomaly Detection in Amazon SageMaker (IP address detection)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Unsupervised%20Anomaly%20Detection%20in%20Amazon%20SageMaker%20(IP%20address%20detection).ipynb) 
    <p>
     In this notebook, we use the Amazon SageMaker IP Insights algorithm to train a model on synthetic data. We then use this model to perform inference on the data and show how to discover suspicious IP addresses. It ingests historical data as (entity, IPv4 Address) pairs and learns the IP usage patterns of each entity. When queried with an (entity, IPv4 Address) event, an Amazon SageMaker IP Insights model returns a score that infers how anomalous the pattern of the event is.
-	</p>	
+	</p>
+
+   #### [Customer Churn Prediction using XGBoost with Amazon SageMaker](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Customer%20Churn%20Prediction%20using%20XGBoost%20with%20Amazon%20SageMaker.ipynb) 
+   <p>
+    This notebook describes using machine learning (ML) for the automated identification of unhappy customers, also known as customer churn prediction. ML models rarely give perfect predictions though, so this notebook is also about how to incorporate the relative costs of prediction mistakes when determining the financial outcome of using ML. We use an example of churn that is familiar to all of us–leaving a mobile phone operator. Seems like I can always find fault with my provider du jour! And if my provider knows that I’m thinking of leaving, it can offer timely incentives–I can always use a phone upgrade or perhaps have a new feature activated–and I might just stick around. Incentives are often much more cost effective than losing and reacquiring a customer.
+	</p>
+	
   
    #### [Recommendation System on Amazon SageMaker - Beginner (Factorization Machine)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Recommendation%20System%20on%20Amazon%20SageMaker%20-%20Beginner%20(Factorization%20Machine).ipynb) 
    <p>
@@ -122,9 +128,14 @@ These examples display unique functionality available in Amazon SageMaker. They 
     Here we specifically look at how we could fine-tune hyperparamers using the same example in the basic Autopilot example above. It shows how Sagemakers' fast computing resources takes care of tuning much faster and cost-efficient than any other services. We can also inspect training and tuning jobs within Amazon SageMaker Experiments console (so it never goes away!). Also covers a complete model-building cycle.
 	</p>  
 	
-   #### [Predict the age of Abalone (regression problem) with Amazon SageMaker, Spark Pipeline, and AWS Glue](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Predict%20the%20age%20of%20Abalone%20(regression%20problem)%20with%20Amazon%20SageMaker%2C%20Spark%20Pipeline%2C%20and%20AWS%20Glue%20.ipynb) 
+   #### [Abalone Age Prediction (regression problem) using XGBoost with Amazon SageMaker, Spark Pipeline, and AWS Glue](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Predict%20the%20age%20of%20Abalone%20(regression%20problem)%20with%20Amazon%20SageMaker%2C%20Spark%20Pipeline%2C%20and%20AWS%20Glue%20.ipynb) 
    <p>
     This notebook shows how to build a prediction model to determine age of an Abalone (a kind of shellfish) from its physical measurements, using Feature processing with Spark, training with XGBoost and deploying as Inference Pipeline. In this notebook, we use Amazon Glue to run serverless Spark. Though the notebook demonstrates the end-to-end flow on a small dataset, the setup can be seamlessly used to scale to larger datasets. We'll use SparkML to process the dataset (apply one or many feature transformers) and upload the transformed dataset to S3 so that it can be used for training with XGBoost.
+	</p>		
+	
+   #### [Text classification (classification problem) using BlazingText with Amazon SageMaker, Spark Pipeline, and AWS Glue](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Text%20classification%20model%20using%20BlazingText%20with%20Amazon%20SageMaker%2C%20Spark%20Pipeline%2C%20and%20AWS%20Glue%20.ipynb) 
+   <p>
+    In this example, we will train the text classification model using SageMaker BlazingText algorithm on the DBPedia Ontology Dataset. Many of the training step resembles the 'Predict age of Alabone' notebook, so explanations are limited in this example, and we dive into code directly. The dataset is constructed by picking 14 unique classes. It has 560,000 training samples and 70,000 testing samples. The fields we used for this dataset contain title and abstract of each Wikipedia article.
 	</p>		
 
    #### [Fraud Detection Modeling on Amazon SageMaker - Advanced](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Fraud%20Detection%20Modeling%20on%20Amazon%20SageMaker%20-%20Advanced.ipynb) 
@@ -146,7 +157,7 @@ These examples display unique functionality available in Amazon SageMaker. They 
    <p>
     We use transfer learning mode in Sagemaker to fine-tune a pre-trained model (trained on imagenet data) to learn to classify a new dataset. The pre-trained model (ImageNet) will be fine-tuned using CIFAR-10 dataset. This covers a complete model-building cycle (dataloading, preprocessing, Hyperparmeter setting, Sagemaker training, Investigating loss, Testing, Model Deployment) using Amazon SageMaker.
 	</p>
-
+	
 
    #### [Object Detection using Amazon SageMaker (RecordIO format)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Object%20Detection%20using%20Amazon%20SageMaker%20(RecordIO%20format).ipynb) 
    <p>
