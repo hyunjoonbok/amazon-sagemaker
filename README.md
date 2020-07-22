@@ -126,7 +126,8 @@ These examples display unique functionality available in Amazon SageMaker. They 
    #### [Advanced Amazon SageMaker AutoPilot (Hyperparameter tuning)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/(Advanced)%20Amazon%20SageMaker%20AutoPilot%20(Hyperparameter%20tuning).ipynb) 
    <p>
     Here we specifically look at how we could fine-tune hyperparamers using the same example in the basic Autopilot example above. It shows how Sagemakers' fast computing resources takes care of tuning much faster and cost-efficient than any other services. We can also inspect training and tuning jobs within Amazon SageMaker Experiments console (so it never goes away!). Also covers a complete model-building cycle.
-	</p>  
+	</p> 
+	
 	
    #### [Abalone Age Prediction (regression problem) using XGBoost with Amazon SageMaker, Spark Pipeline, and AWS Glue](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Predict%20the%20age%20of%20Abalone%20(regression%20problem)%20with%20Amazon%20SageMaker%2C%20Spark%20Pipeline%2C%20and%20AWS%20Glue%20.ipynb) 
    <p>
@@ -153,6 +154,11 @@ These examples display unique functionality available in Amazon SageMaker. They 
     This notebook shows how to use DeepAR on SageMaker for predicting energy consumption of 370 customers over time. Particularly we will see the power of SageMaker where it trains a model, deploy it, and make requests to the deployed model to obtain forecasts interactively. Also, we will utilize DeepAR's advanced features like: missing values, additional time features, non-regular frequencies and category information. Same her, we go through full cycle of model building (data loading, cleaning, modeling, deploying, inference) in SageMaker using Python SDK. 
 	</p>  
 
+   #### [Forecast with Amazon SageMaker DeepAR 3 (Synthetic data)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Forecast%20with%20Amazon%20SageMaker%20DeepAR%203%20(Synthetic%20data).ipynb) 
+   <p>
+    Often times, you encounter more complex types of data when building a time-series model. This notebook demonstrates how to prepare a synthetic dataset of time series for training DeepAR and how to use the trained model for inference. DeepAR builds a single model for all time-series and tries to identify similarities across them. Intuitively, this sounds like a good idea for temperature time-series as we could expect them to exhibit similar patterns year after year. 
+	</p>  
+
    #### [Image Classification on CIFAR-10 (transfer-learning)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Image%20Classification%20on%20CIFAR-10%20(transfer-learning)%20in%20Amazon%20SageMaker.ipynb) 
    <p>
     We use transfer learning mode in Sagemaker to fine-tune a pre-trained model (trained on imagenet data) to learn to classify a new dataset. The pre-trained model (ImageNet) will be fine-tuned using CIFAR-10 dataset. This covers a complete model-building cycle (dataloading, preprocessing, Hyperparmeter setting, Sagemaker training, Investigating loss, Testing, Model Deployment) using Amazon SageMaker.
@@ -174,6 +180,11 @@ These examples display unique functionality available in Amazon SageMaker. They 
     Introduction Object detection is the process of identifying and localizing objects in an image. A typical object detection solution takes an image as input and provides a bounding box on the image where an object of interest is found. It also identifies what type of object the box encapsulates. To create such a solution, we need to acquire and process a traning dataset, create and setup a training job for the alorithm so that it can learn about the dataset. Finally, we can then host the trained model in an endpoint, to which we can supply images. This notebook is an end-to-end example showing how the Amazon SageMaker Object Detection algorithm can be used with a publicly available dataset of bird images. Amazon SageMaker's object detection algorithm uses the Single Shot multibox Detector (SSD) algorithm, and this notebook uses a ResNet base network with that algorithm.
 	</p> 	
 
+   #### [Fine-tuning and Deplying PyTorch BERT model with Amazon Elastic Inference on AWS SageMaker](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Fine-tuning%20and%20Deplying%20PyTorch%20BERT%20model%20with%20Amazon%20Elastic%20Inference%20on%20AWS%20SageMaker.ipynb) 
+   <p>
+    Text classification is a technique for putting text into different categories, and has a wide range of applications. This post demonstrates how to use Amazon SageMaker to fine-tune a PyTorch BERT model and deploy it with Elastic Inference
+	</p> 
+
 
    #### [US Census Segmentation using PCA and K-means clustering](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Data%20Segmentation%20using%20PCA%20and%20K-means%20clustering.ipynb) 
    <p>
@@ -187,7 +198,7 @@ These examples display unique functionality available in Amazon SageMaker. They 
 	</p>	
 	
 
-   #### [Sagemaker Script mode (ML - XGboost))](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Sagemaker%20Script%20mode%20usage%20(ML%20-%20XGboost).ipynb) 
+   #### [Sagemaker Script mode (ML - XGboost)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Sagemaker%20Script%20mode%20usage%20(ML%20-%20XGboost).ipynb) 
    <p>
     Introduce a script-mode in Sagemaker where a user can bring their own Python file. Script mode is a very useful technique that lets you easily run your existing code in Amazon SageMaker, with very little change in codes. This gives more flexibility in the traning without having to worry about building containers or managing the underlying infrastructure. This time, we tackle the simple Deep Learning problem (MNIST) with Tensorflow
 	</p>  
@@ -195,7 +206,13 @@ These examples display unique functionality available in Amazon SageMaker. They 
    #### [Sagemaker Script mode (DL - Tensorflow)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Sagemaker%20Script%20mode%20usage%20(DL%20-%20Tensorflow).ipynb) 
    <p>
     The similar script mode codesets as above, but this time we look at the example of Deep Learning problem (MNIST) with Tensorflow.
-	</p>    
+	</p>   
+	
+   #### [Automating Machine Learning Workflows with Amazon Glue, Amazon SageMaker and AWS Step Functions](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Automating%20Machine%20Learning%20Workflows%20with%20Amazon%20Glue%2C%20Amazon%20SageMaker%20and%20AWS%20Step%20Functions.ipynb) 
+   <p>
+    Automating machine learning workflows helps to build repeatable and reproducible machine learning models. It is a key step of in putting machine learning projects in production as we want to make sure our models are up-to-date and performant on new data. We will use the AWS services mentioned above to develop and automate a machine learning workflow with PySpark on AWS Glue for data preparation and processing, and Amazon SageMaker for model training and batch predictions. This will help any aspiring data scientists would acquire necessary skills to use produce a full ML workflow
+	</p>  	
+	
 
 ##### For more information on Script mode, plese refer to [AWS Blog](https://aws.amazon.com/blogs/machine-learning/using-tensorflow-eager-execution-with-amazon-sagemaker-script-mode/)
 
