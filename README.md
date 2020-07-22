@@ -208,6 +208,7 @@ Created by [@hyunjoonbok](https://www.linkedin.com/in/hyunjoonbok/) - feel free 
 
 
 ## To-Do 
+- Serverless SageMaker Training and Deployment Orchestration [github](https://github.com/aws-samples/serverless-sagemaker-orchestration)
 - Build End-to-End Machine Learning (ML) Workflows with Amazon SageMaker and Apache Airflow [github](https://github.com/aws-samples/sagemaker-ml-workflow-with-apache-airflow), [AWS Blog](https://aws.amazon.com/blogs/machine-learning/build-end-to-end-machine-learning-workflows-with-amazon-sagemaker-and-apache-airflow/)
 - Official AWS sagemaker [github](https://github.com/awslabs/amazon-sagemaker-examples)
 - Official AWS sagemaker script mode [github](https://github.com/aws-samples/amazon-sagemaker-script-mode)
