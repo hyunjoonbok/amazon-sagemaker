@@ -95,6 +95,11 @@ These examples display unique functionality available in Amazon SageMaker. They 
    <p>
     In this notebook, we use the Amazon SageMaker IP Insights algorithm to train a model on synthetic data. We then use this model to perform inference on the data and show how to discover suspicious IP addresses. It ingests historical data as (entity, IPv4 Address) pairs and learns the IP usage patterns of each entity. When queried with an (entity, IPv4 Address) event, an Amazon SageMaker IP Insights model returns a score that infers how anomalous the pattern of the event is.
 	</p>
+	
+   #### [FULL Anomaly Detection Coverage on Real Businses Problem with AWS SageMaker](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/FULL%20Anomaly%20Detection%20Coverage%20on%20Real%20Businses%20Problem%20with%20AWS%20SageMaker.ipynb) 
+   <p>
+    This notebook shows how to train an Amazon SageMaker model to flag anomalous Medicare claims and target them for further investigation on suspicion of fraud. THe solution is to create a model to flag suspicious claims. The difference between data normality and abnormality is often not clear. Anomaly detection methods could be application-specific. For example, in clinical data, a small deviation could be an outlier, but in a marketing application, you need a significant deviation to justify an outlier. Noise in data may appear as deviations in attribute values or missing values. Noise may hide an outlier or flag deviation as an outlier. Providing clear justification for an outlier may be difficult. AWS Sagemaker as a fully managed service to go through complete model building.
+	</p>	
 
    #### [Customer Churn Prediction using XGBoost with Amazon SageMaker](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Customer%20Churn%20Prediction%20using%20XGBoost%20with%20Amazon%20SageMaker.ipynb) 
    <p>
@@ -116,7 +121,11 @@ These examples display unique functionality available in Amazon SageMaker. They 
    <p>
     This notebook covers another algorithm Object2Vec, which is a highly customizable multi-purpose algorithm that can learn embeddings of pairs of objects, to build a recommendation model in SageMaker. We process the data with Spark, train it with XGBoost and deploy as Inference Pipeline
 	</p>  
-		
+
+   #### [Introduction to using Optuna for Hyper Parameter Optimization with PyTorch and MNIST on Amazon SageMaker](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/%20Introduction%20to%20using%20Optuna%20for%20Hyper%20Parameter%20Optimization%20with%20PyTorch%20and%20MNIST%20on%20Amazon%20SageMaker.ipynb) 
+   <p>
+    This notebook covers how we perform HyperParameter Optimization using Optuna and its reference architecture in Amazon SageMaker. Amazon SageMaker supports various frameworks and interfaces such as TensorFlow, Apache MXNet, PyTorch, scikit-learn, Horovod, Keras, and Gluon. The service offers ways to build, train, and deploy machine learning models to all developers and data scientists. Amazon SageMaker offers managed Jupyter Notebook and JupyterLab as well as containerized environments for training and deployment. The service also offers an Automatic Model Tuning with Bayesian HPO feature by default.
+	</p>  
       
    #### [Amazon SageMaker AutoPilot (ML Tabular Problem)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Amazon%20SageMaker%20AutoPilot%20(model%20building%20to%20deploy).ipynb) 
    <p>
@@ -158,6 +167,7 @@ These examples display unique functionality available in Amazon SageMaker. They 
    <p>
     Often times, you encounter more complex types of data when building a time-series model. This notebook demonstrates how to prepare a synthetic dataset of time series for training DeepAR and how to use the trained model for inference. DeepAR builds a single model for all time-series and tries to identify similarities across them. Intuitively, this sounds like a good idea for temperature time-series as we could expect them to exhibit similar patterns year after year. 
 	</p>  
+	
 
    #### [Image Classification on CIFAR-10 (transfer-learning)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Image%20Classification%20on%20CIFAR-10%20(transfer-learning)%20in%20Amazon%20SageMaker.ipynb) 
    <p>
@@ -183,6 +193,11 @@ These examples display unique functionality available in Amazon SageMaker. They 
    #### [Fine-tuning and Deplying PyTorch BERT model with Amazon Elastic Inference on AWS SageMaker](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Fine-tuning%20and%20Deplying%20PyTorch%20BERT%20model%20with%20Amazon%20Elastic%20Inference%20on%20AWS%20SageMaker.ipynb) 
    <p>
     Text classification is a technique for putting text into different categories, and has a wide range of applications. This post demonstrates how to use Amazon SageMaker to fine-tune a PyTorch BERT model and deploy it with Elastic Inference
+	</p> 
+
+   #### [Deploying a Full-Stack visual search application with SageMaker and Tensorflow](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Deploying%20a%20full-stack%20visual%20search%20application.ipynb) 
+   <p>
+    In this notebook, we'll build a model to classify the clothes that are similar to the input using a CNN and Elasticsearchon KNN algorithm. Visual image search is used in interfaces where instead of asking for something by voice or text, you show a photographic example of what you are looking for. With KNN, from each image you extract 2,048 feature vectors from a pre-trained Resnet50 model hosted in Amazon SageMaker. Each vector is stored to a KNN index in an Amazon ES domain. The following screenshot illustrates the workflow for creating KNN index.
 	</p> 
 
 
@@ -211,6 +226,11 @@ These examples display unique functionality available in Amazon SageMaker. They 
    #### [Automating Machine Learning Workflows with Amazon Glue, Amazon SageMaker and AWS Step Functions](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Automating%20Machine%20Learning%20Workflows%20with%20Amazon%20Glue%2C%20Amazon%20SageMaker%20and%20AWS%20Step%20Functions.ipynb) 
    <p>
     Automating machine learning workflows helps to build repeatable and reproducible machine learning models. It is a key step of in putting machine learning projects in production as we want to make sure our models are up-to-date and performant on new data. We will use the AWS services mentioned above to develop and automate a machine learning workflow with PySpark on AWS Glue for data preparation and processing, and Amazon SageMaker for model training and batch predictions. This will help any aspiring data scientists would acquire necessary skills to use produce a full ML workflow
+	</p>  	
+	
+   #### [A/B Testing ML models in Production using AWS SageMaker](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/A%26B%20Testing%20ML%20models%20in%20Production%20using%20AWS%20SageMaker.ipynb) 
+   <p>
+    In this notebook, we will evaluate models by invoking specific variants of the model, and release a new model by specifying traffic distribution. In production ML workflows, we frequently have to our their models, such as by performing Automatic Model Tuning, training on additional or more-recent data, and improving feature selection. Performing A/B testing between a new model and an old model with production traffic can be an effective final step in the validation process for a new model. In A/B testing, you test different variants of your models and compare how each variant performs relative to each other. Amazon SageMaker enables you to test multiple models or model versions behind the same endpoint using production variants. Each production variant identifies a machine learning (ML) model and the resources deployed for hosting the model. You can distribute endpoint invocation requests across multiple production variants by providing the traffic distribution for each variant, or you can invoke a specific variant directly for each request.
 	</p>  	
 	
 
