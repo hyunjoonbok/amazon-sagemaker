@@ -4,3 +4,8 @@ regex
 sentencepiece
 sacremoses
 transformers==2.3.0
+pip>=20.0.2
+numpy
+pandas
+Pillow
+tensorflow==2.1.0
