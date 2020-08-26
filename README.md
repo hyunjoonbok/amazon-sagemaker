@@ -11,7 +11,7 @@ With the SDK, you can train and deploy models using popular deep learning framew
 
 ## Motivation
 
-This repository contains End-to-End Amazon Sagemaker usages from model builing to deployment with integrated AWS services. You should be able to get a firm grasp of how to use Amazon Sagemaker to build your service. Amazon Sagemaker allows us to use their own jupyter notebooks with tons of pre-built algorithms (or your own python script file) to perform the training and deploying in a very simple manner. I believe this is one of the needed skills to learn for any Data Scientists, not just for small organaztion, but for big corporates who wants to deploy model at scale and save incurring costs. This repo contains a numerious real-life notebooks created by [@hyunjoonbok](https://www.linkedin.com/in/hyunjoonbok/) utilizing codes from differnet sources (i.e. Amazon Sagemaker Tutorials)
+This repository contains End-to-End Amazon Sagemaker usages from model builing to deployment with integrated AWS services. You should be able to get a firm understading of how to use Amazon Sagemaker to build your service. Amazon Sagemaker allows us to use their own jupyter notebooks with tons of pre-built algorithms (or your own python script file) to perform the training and deploying in a very simple manner. I believe this is one of the needed skills to learn for any Data Scientists, not just for small organaztion, but for big corporates who wants to deploy model at scale and save incurring costs. This repo contains a numerious real-life notebooks created by [@hyunjoonbok](https://www.linkedin.com/in/hyunjoonbok/) utilizing codes from differnet sources (i.e. Amazon Sagemaker Tutorials)
 
 
 ## Table of contents
