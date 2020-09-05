@@ -239,7 +239,6 @@ These examples display unique functionality available in Amazon SageMaker. They 
 
 <hr>
 
-
 ## Contact
 Created by [@hyunjoonbok](https://www.linkedin.com/in/hyunjoonbok/) - feel free to contact me!
 
