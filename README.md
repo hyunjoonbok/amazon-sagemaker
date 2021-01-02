@@ -93,7 +93,7 @@ These examples display unique functionality available in Amazon SageMaker. They 
 	
    #### [Unsupervised Anomaly Detection in Amazon SageMaker (IP address detection)](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/Unsupervised%20Anomaly%20Detection%20in%20Amazon%20SageMaker%20(IP%20address%20detection).ipynb) 
    <p>
-    In this notebook, we use the Amazon SageMaker IP Insights algorithm to train a model on synthetic data. We then use this model to perform inference on the data and show how to discover suspicious IP addresses. It ingests historical data as (entity, IPv4 Address) pairs and learns the IP usage patterns of each entity. When queried with an (entity, IPv4 Address) event, an Amazon SageMaker IP Insights model returns a score that infers how anomalous the pattern of the event is.
+    In this notebook, we use the Amazon SageMaker IP-Insights algorithm to train a model on synthetic data. We then use this model to perform inference on the data and show how to discover suspicious IP addresses. It ingests historical data as (entity, IPv4 Address) pairs and learns the IP usage patterns of each entity. When queried with an (entity, IPv4 Address) event, an Amazon SageMaker IP Insights model returns a score that infers how anomalous the pattern of the event is.
 	</p>
 	
    #### [FULL Anomaly Detection Coverage on Real Businses Problem with AWS SageMaker](https://github.com/hyunjoonbok/amazon-sagemaker/blob/master/FULL%20Anomaly%20Detection%20Coverage%20on%20Real%20Businses%20Problem%20with%20AWS%20SageMaker.ipynb) 
